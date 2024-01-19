@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/html_css_Yilchik/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Focus.Frame</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+    
+    <link rel="stylesheet" href="/html_css_Yilchik/assets/index-5ff5023d.css">
+  </head>
+  <body>
+    <header class="header hero">
+  <div class="container header-container">
+    <nav class="navigation">
+      <a href="./index.html" class="logo-header">
+        <svg class="logo-header-icon">
+          <use href="/html_css_Yilchik/assets/icon-6aa2740c.svg#icon-logo"></use>
+        </svg>
+      </a>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#about-us" class="nav-link">About us</a>
+        </li>
+        <li class="nav-item">
+          <a href="#our-courses" class="nav-link">Our courses</a>
+        </li>
+        <li class="nav-item">
+          <a href="#our-mentors" class="nav-link">Our mentors</a>
+        </li>
+        <li class="nav-item">
+          <a href="#reviews" class="nav-link">Reviews</a>
+        </li>
+        <li class="nav-item">
+          <a href="#footer" class="nav-link">Contacts</a>
+        </li>
+      </ul>
+      <a href="#sign-up" class="header-camera-btn">
+        <svg class="header-camera-icon" width="16" height="16">
+          <use href="/html_css_Yilchik/assets/icon-6aa2740c.svg#icon-camera"></use>
+        </svg>
+      </a>
+      <button class="header-nav-btn" type="button">
+        <svg class="header-nav-icon" width="32" height="22 ">
+          <use href="/html_css_Yilchik/assets/icon-6aa2740c.svg#icon-nav"></use>
+        </svg>
+      </button>
+    </nav>
+    <a href="#sign-up" class="sign-up-btn">SIGN UP</a>
+  </div>
+</header>
+
+    <main>
+      <section class="hero">
+  <div class="hero-container container">
+    <div class="desk-left">
+      <h1 class="hero-title">
+        Discover the magic of <span class="hero-accent">photography</span> in
+        our school
+      </h1>
+      <p class="hero-title-desk">
+        Our photography school offers an unforgettable journey, where you can
+        learn the basics of composition, master technical skills, translate your
+        unique ideas.
+      </p>
+      <div class="hero-block">
+        <div class="block-users">
+          <div class="users-images">
+            <div class="images-wrapper">
+              <img
+                class="usrs-wrap-img"
+                srcset="data:image/png;base64,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 1x, /html_css_Yilchik/assets/hero-users1@2x-6f57ae05.png 2x"
+                src="data:image/png;base64,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"
+                width="44"
+                height="44"
+                alt="avatar girl 1"
+              />
+            </div>
+            <div class="images-wrapper">
+              <img
+                class="usrs-wrap-img"
+                srcset="data:image/png;base64,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 1x, /html_css_Yilchik/assets/hero-users2@2x-dab96300.png 2x"
+                src="data:image/png;base64,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"
+                width="44"
+                height="44"
+                alt="avatar boy"
+              />
+            </div>
+            <div class="images-wrapper">
+              <img
+                class="usrs-wrap-img"
+                srcset="data:image/png;base64,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 1x, /html_css_Yilchik/assets/hero-users3@2x-2a53b895.png 2x"
+                src="data:image/png;base64,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"
+                width="44"
+                height="44"
+                alt="avatar girl 2"
+              />
+            </div>
+          </div>
+          <div class="users-text">
+            <a class="users-text-link" href="#reviews">
+              <p class="users-text-desc">Our happy students</p>
+              <svg class="users-text-icon" width="18" height="9">
+                <use href="/html_css_Yilchik/assets/icon-6aa2740c.svg#icon-arrow-right"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="block-reviews">
+          <span class="rev-icon">
+            <svg class="rev-icon-star" width="20" height="20">
+              <use href="/html_css_Yilchik/assets/icon-6aa2740c.svg#icon-star"></use>
+            </svg>
+          </span>
+          <div class="reviews-text">
+            <p class="reviews-text-desc">Reviews</p>
+            <p class="reviews-text-number">+1500</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="desk-right">
+      <picture>
+        <!-- Desktop -->
+        <source
+          media="(min-width: 1280px)"
+          srcset="/html_css_Yilchik/assets/hero_desk@1x-76b34a78.png 1x, /html_css_Yilchik/assets/hero_desk@2x-b4c16e76.png 2x"
+        />
+        <!-- Tablet -->
+        <source
+          media="(min-width: 768px)"
+          srcset="/html_css_Yilchik/assets/hero_tab@1x-a82d4a3f.png 1x, /html_css_Yilchik/assets/hero_tab@2x-89f8cdbb.png 2x"
+        />
+        <!-- Mobile -->
+        <source
+          media="(max-width: 767px)"
+          srcset="/html_css_Yilchik/assets/hero_mob@1x-9608d3ff.png 1x, /html_css_Yilchik/assets/hero_mob@1x-9608d3ff.png 2x"
+        />
+        <img
+          class="image-low"
+          src="/html_css_Yilchik/assets/hero_mob@1x-9608d3ff.png"
+          alt="man with a camera"
+          width="259"
+          height="314"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
+
+      <!-- Advertisement section -->
+<section class="advertisement">
+  <div class="advertisement-div">
+    <div class="advertisement-inner">
+      <h2 class="advertisement-line">
+        <span class="advertisement-line-color">Master </span> your photography
+        <span class="advertisement-line-color"> skills with us!</span>
+      </h2>
+      <h2 class="advertisement-line">
+        <span class="advertisement-line-color">Master </span> your photography
+        <span class="advertisement-line-color"> skills with us!</span>
+      </h2>
+    </div>
+  </div>
+</section>
+
+      <!-- About us section -->
+<section class="about-us" id="about-us">
+  <div class="container about-us-container">
+    <h2 class="about-us-title">
+      About <span class="about-us-title-color"> Us </span>
+    </h2>
+    <div class="about-us-div">
+      <picture>
+        <source
+          media="(min-width: 1280px)"
+          srcset="/html_css_Yilchik/assets/about_us-desk1280@1x-30a8ff17.png 1x, /html_css_Yilchik/assets/about_us-desk1280@2x-08e467ce.png 2x"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="/html_css_Yilchik/assets/about_us-tab@1x-f241c434.png 1x, /html_css_Yilchik/assets/about_us-tab@2x-73526d25.png 2x"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="/html_css_Yilchik/assets/about_us-mob@1x-7e53b16d.png 1x, /html_css_Yilchik/assets/about_us-mob@2x-eaf95008.png 2x"
+        />
+        <img
+          class="about-us-camera"
+          src="/html_css_Yilchik/assets/about_us-desk1280@1x-30a8ff17.png"
+          alt="90-deg rotated camera"
+          width="488"
+          height="260"
+        />
+      </picture>
+      <ul class="about-us-list">
+        <li class="about-us-item-1">
+          <p class="about-us-description">
+            Our photography school is designed to teach you everything you need
+            to know about this magical art. Regardless of your experience or
+            skill level, we offer a wide range of courses to suit your needs and
+            interests. Our teaching team consists of experienced photographers
+            who have many years of experience in this field. They strive not
+            only to share their knowledge, but also to inspire you to develop
+            and express your unique creativity.
+          </p>
+        </li>
+        <li class="about-us-item-2">
+          <p class="about-us-description">
+            Our courses cover a wide range of topics, from the basics of
+            photography and equipment use to professional image processing and
+            creating impressive compositions. You will have the opportunity to
+            learn the technical aspects of photography, discover your own style
+            and develop your own visual language.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="courses-section" id="our-courses">
+  <div class="courses-wrap container">
+    <div class="text-wrap">
+      <h2 class="caption">Our <span class="caption-span">Courses</span></h2>
+      <p class="courses-desc">
+        At our photography school, we offer a variety of courses that cover all
+        aspects of this fascinating art. Regardless of your experience or skill
+        level, we have courses to suit your needs and goals.
+      </p>
+    </div>
+
+    <ul class="courses-list">
+      <li class="courses-container">
+        <div class="courses-item">
+          <a href="#sign-up" class="courses-link">
+            <svg class="courses-link-icon" width="20" height="20">
+              <use href="/html_css_Yilchik/assets/icon-6aa2740c.svg#icon-arrow-diagonal"></use>
+            </svg>
+          </a>
+          <h3 class="courses-name">Basics of<br />photography</h3>
+          <p class="about-courses">
+            During this course, you will be able to familiarize yourself with
+            different types of cameras, learn the basics of composition.
+          </p>
+        </div>
+      </li>
+      <li class="courses-container">
+        <div class="courses-item">
+          <a href="#sign-up" class="courses-link">
+            <svg class="courses-link-icon" width="20" height="20">
+              <use href="/html_css_Yilchik/assets/icon-6aa2740c.svg#icon-arrow-diagonal"></use>
+            </svg>
+          </a>
+          <h3 class="courses-name">Landscape<br />photography</h3>
+          <p class="about-courses">
+            In this course, you'll learn how to choose the right angles, frame
+            landscapes, and create depth and perspective in your images.
+          </p>
+        </div>
+      </li>
+      <li class="courses-container">
+        <div class="courses-item">
+          <a href="#sign-up" class="courses-link">
+            <svg class="courses-link-icon" width="20" height="20">
+              <use href="/html_css_Yilchik/assets/icon-6aa2740c.svg#icon-arrow-diagonal"></use>
+            </svg>
+          </a>
+          <h3 class="courses-name">Portrait<br />photography</h3>
+          <p class="about-courses">
+            During this course, you will learn to choose the right lighting,
+            reproduce the mood and expressions on the faces of the models.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="our-mentors-section" id="our-mentors">
+    <div class="container mentors-container">
+        <h2 class="our-mentors-title-h2 "><span class="span-our">Our </span> Mentors</span></h2>
+        <ul class="menu-mentors-list list">
+            <li class="menu-mentors-item menu-item">
+                <picture class="picture-foto-mentors">
+                    <source media="(min-width: 1280px)"
+                        srcset="/html_css_Yilchik/assets/girl1our_mentors1@1x-deb77d10.png 1x, /html_css_Yilchik/assets/girl1our_mentors1@2x-61a68064.png 2x"/>
+                    <source media="(min-width: 768px)"
+                        srcset="/html_css_Yilchik/assets/girl1our_mentors1@1x-deb77d10.png 1x, /html_css_Yilchik/assets/girl1our_mentors1@2x-61a68064.png 2x"/>
+                    <source media="(max-width: 767px)"
+                        srcset="/html_css_Yilchik/assets/girl1our_mentors1@1x-deb77d10.png 1x, /html_css_Yilchik/assets/girl1our_mentors1@2x-61a68064.png 2x"/>
+                    <img class="img-mentors" src="/html_css_Yilchik/assets/girl1our_mentors1@1x-deb77d10.png" alt="Emilia Smith" width="180">
+                    </img>
+                </picture>
+                <div class="container-mentors-title-text">
+                  <h3 class="our-mentors-title-h3">Emilia Smith</h3>
+                    <p class="our-mentors-text">1.5 years of experience</p>
+                </div>       
+            </li>
+            <li class="menu-mentors-item menu-item">
+                <picture class="picture-foto-mentors">
+                    <source media="(min-width: 1280px)"
+                        srcset="/html_css_Yilchik/assets/boy1our_mentors2@1x-3e22253a.png 1x, /html_css_Yilchik/assets/boy1our_mentors2@2x-52dd1d80.png 2x"/>
+                    <source media="(min-width: 768px)"
+                         srcset="/html_css_Yilchik/assets/boy1our_mentors2@1x-3e22253a.png 1x, /html_css_Yilchik/assets/boy1our_mentors2@2x-52dd1d80.png 2x"/>
+                    <source media="(max-width: 767px)"
+                        srcset="/html_css_Yilchik/assets/boy1our_mentors2@1x-3e22253a.png 1x, /html_css_Yilchik/assets/boy1our_mentors2@2x-52dd1d80.png 2x"/>
+                    <img class="img-mentors" src="/html_css_Yilchik/assets/boy1our_mentors2@1x-3e22253a.png" alt="Alex Lebedev" width="180">
+                    </img>
+                </picture>
+                 <div class="container-mentors-title-text">
+                    <h3 class="our-mentors-title-h3">Alex Lebedev</h3>
+                    <p class="our-mentors-text">3.5 years of experience</p>
+                </div>
+            </li>
+            <li class="menu-mentors-item menu-item">
+                <picture class="picture-foto-mentors">
+                    <source media="(min-width: 1280px)"
+                        srcset="/html_css_Yilchik/assets/girl2our_mentors3@1x-66b8a683.png 1x, /html_css_Yilchik/assets/girl2our_mentors3@2x-4173c7b2.png 2x"/>
+                    <source media="(min-width: 768px)"
+                        srcset="/html_css_Yilchik/assets/girl2our_mentors3@1x-66b8a683.png 1x, /html_css_Yilchik/assets/girl2our_mentors3@2x-4173c7b2.png 2x"/>
+                    <source media="(max-width: 767px)"
+                        srcset="/html_css_Yilchik/assets/girl2our_mentors3@1x-66b8a683.png 1x, /html_css_Yilchik/assets/girl2our_mentors3@2x-4173c7b2.png 2x"/>
+                    <img class="img-mentors" src="/html_css_Yilchik/assets/girl2our_mentors3@1x-66b8a683.png" alt="Mia Dubrovska" width="180">
+                    </img>
+                </picture>
+                <div class="container-mentors-title-text">
+                    <h3 class="our-mentors-title-h3">Mia Dubrovska</h3>
+                    <p class="our-mentors-text">2.0 years of experience</p>
+                </div>
+            </li>
+            <li class="menu-mentors-item menu-item">
+                <picture class="picture-foto-mentors">
+                    <source media="(min-width: 1280px)"
+                        srcset="/html_css_Yilchik/assets/boy2our_mentors4@1x-6bee6761.png 1x, /html_css_Yilchik/assets/boy2our_mentors4@2x-461855f7.png 2x"/>
+                    <source media="(min-width: 768px)"
+                        srcset="/html_css_Yilchik/assets/boy2our_mentors4@1x-6bee6761.png 1x, /html_css_Yilchik/assets/boy2our_mentors4@2x-461855f7.png 2x"/>
+                    <source media="(max-width: 767px)"
+                        srcset="/html_css_Yilchik/assets/boy2our_mentors4@1x-6bee6761.png 1x, /html_css_Yilchik/assets/boy2our_mentors4@2x-461855f7.png 2x"/>
+                    <img class="img-mentors" src="/html_css_Yilchik/assets/boy2our_mentors4@1x-6bee6761.png" alt="Mia Dubrovska" width="180">
+                    </img>
+                </picture>
+                    <div class="container-mentors-title-text">
+                    <h3 class="our-mentors-title-h3">Eliot Kovalev</h3>
+                    <p class="our-mentors-text">4.0 years of experience</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</section>
+      <section class="sign-up" id="sign-up">
+  <div class="container sign-up-container">
+    <div class="form-text">
+      <h2 class="sign-up-name">Sign <span class="text-color">Up</span></h2>
+      <p class="sign-up-caption">
+        Please use the form below to contact us. Enter your name, email, and
+        message and we'll get back to you shortly.
+      </p>
+      <form
+        class="sign-up-form form"
+        name="sign-up"
+        autocomplete="on"
+        method="post"
+      >
+        <div class="sign-up-input">
+          <input
+            class="form-input"
+            id="user-name"
+            name="user-name"
+            type="text"
+            placeholder="Enter your name"
+            pattern="[A-Za-z]{3}"
+            required
+          />
+
+          <input
+            class="form-input"
+            id="user-email"
+            name="user-email"
+            type="email"
+            placeholder="Enter your email"
+            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+            required
+          />
+
+          <textarea
+            class="form-comment"
+            id="user-comment"
+            name="user-comment"
+            rows="5"
+            placeholder="Message"
+          ></textarea>
+        </div>
+        <button type="submit" class="button">Send</button>
+      </form>
+      <p class="agree">
+        By clicking on “Send” button, you agree to our
+        <a class="form-privacy-link" href="">Privacy&nbsp;Policy</a>, and allow
+        Promodo to use this information for marketing purposes.
+      </p>
+    </div>
+    <div class="foto">
+      <div class="back-photo">
+        <picture class="picture-foto-small">
+          <source
+            media="(min-width: 1280px)"
+            srcset="/html_css_Yilchik/assets/sign_up1-desk1280@1x-7f9e5ccb.png 1x, /html_css_Yilchik/assets/sign_up1-desk1280@2x-168c4b22.png 2x"
+          />
+          <img
+            src="/html_css_Yilchik/assets/sign_up1-desk1280@1x-7f9e5ccb.png"
+            alt="lens"
+            width="142"
+            height="150"
+            loading="lazy"
+            class="foto-small"
+          />
+        </picture>
+      </div>
+      <picture class="picture-foto-big">
+        <source
+          media="(min-width: 1280px)"
+          srcset="/html_css_Yilchik/assets/sign_up2-desk1280@1x-ba4e7b40.png 1x, /html_css_Yilchik/assets/sign_up2-desk1280@2x-75accf49.png 2x"
+        />
+        <img
+          src="/html_css_Yilchik/assets/sign_up2-desk1280@1x-ba4e7b40.png"
+          alt="camera"
+          width="350"
+          height="540"
+          loading="lazy"
+          class="foto-big"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
+
+      <section class="reviews" id="reviews">
+  <div class="reviews-container container">
+    <h2 class="reviews-title">Reviews</h2>
+    <ul class="reviews-all">
+      <li class="students">
+        <div class="reviews-top">
+          <img
+            class="reviews-avatar"
+            srcset="data:image/png;base64,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 1x, /html_css_Yilchik/assets/reviews-1@2x-fea94b52.png 2x"
+            src="data:image/png;base64,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"
+            alt="review avatar number  2"
+            width="56"
+            height="56"
+          />
+          <div class="reviews-name-status">
+            <h3 class="reviews-name">Abraham Baker</h3>
+            <p class="reviews-status">Student</p>
+          </div>
+        </div>
+        <ul class="rev-star-list">
+          <li class="rev-star-item">
+            <svg class="rev-star-icon" width="16" height="16">
+              <use href="/html_css_Yilchik/assets/icon-6aa2740c.svg#icon-star"></use>
+            </svg>
+          </li>
+          <li class="rev-star-item">
+            <svg class="rev-star-icon" width="16" height="16">
+              <use href="/html_css_Yilchik/assets/icon-6aa2740c.svg#icon-star"></use>
+            </svg>
+          </li>
+          <li class="rev-star-item">
+            <svg class="rev-star-icon" width="16" height="16">
+              <use href="/html_css_Yilchik/assets/icon-6aa2740c.svg#icon-star"></use>
+            </svg>
+          </li>
+          <li class="rev-star-item">
+            <svg class="rev-star-icon" width="16" height="16">
+              <use href="/html_css_Yilchik/assets/icon-6aa2740c.svg#icon-star"></use>
+            </svg>
+          </li>
+          <li class="rev-star-item">
+            <svg class="rev-star-icon" width="16" height="16">
+              <use href="/html_css_Yilchik/assets/icon-6aa2740c.svg#icon-star"></use>
+            </svg>
+          </li>
+        </ul>
+        <p class="reviews-desc">
+          I am very pleased that I decided to enroll in photography school. The
+          teachers turned out to be very talented and experienced professionals
+          who share their knowledge and are dedicated to their work. I was able
+          to expand my skills and discover my own style.
+        </p>
+      </li>
+      <li class="students">
+        <div class="reviews-top">
+          <img
+            class="reviews-avatar"
+            srcset="data:image/png;base64,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 1x, /html_css_Yilchik/assets/reviews-2@2x-d4117116.png 2x"
+            src="data:image/png;base64,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"
+            alt="review avatar number  2"
+            width="56"
+            height="56"
+          />
+          <div class="reviews-name-status">
+            <h3 class="reviews-name">Amanda Lowery</h3>
+            <p class="reviews-status">Student</p>
+          </div>
+        </div>
+        <ul class="rev-star-list">
+          <li class="rev-star-item">
+            <svg class="rev-star-icon" width="16" height="16">
+              <use href="/html_css_Yilchik/assets/icon-6aa2740c.svg#icon-star"></use>
+            </svg>
+          </li>
+          <li class="rev-star-item">
+            <svg class="rev-star-icon" width="16" height="16">
+              <use href="/html_css_Yilchik/assets/icon-6aa2740c.svg#icon-star"></use>
+            </svg>
+          </li>
+          <li class="rev-star-item">
+            <svg class="rev-star-icon" width="16" height="16">
+              <use href="/html_css_Yilchik/assets/icon-6aa2740c.svg#icon-star"></use>
+            </svg>
+          </li>
+          <li class="rev-star-item">
+            <svg class="rev-star-icon" width="16" height="16">
+              <use href="/html_css_Yilchik/assets/icon-6aa2740c.svg#icon-star"></use>
+            </svg>
+          </li>
+          <li class="rev-star-item">
+            <svg class="rev-star-icon" width="16" height="16">
+              <use href="/html_css_Yilchik/assets/icon-6aa2740c.svg#icon-star"></use>
+            </svg>
+          </li>
+        </ul>
+        <p class="reviews-desc">
+          The courses at the photography school exceeded all my expectations. I
+          gained not only technical knowledge, but also inspiration and
+          motivation to reach new heights in my creativity. Hands-on classes and
+          workshops helped me understand different styles of photography.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    </main>
+    
+<footer class="footer-container" id="footer">
+
+    <section class="footer-section container">
+        <div class="footer-top">
+            <a href="./index.html" class="logo-link">
+                <svg class="icon-logo">
+                    <use href="/html_css_Yilchik/assets/icon-6aa2740c.svg#icon-logo"></use>
+                </svg>
+            </a>
+            <div class="footer-top-contacts">
+                <a href="tel:+380665438912">UA: +38 066 543 8912</a>
+                <p>Ukraine, Kyiv</p>
+            </div>
+
+        </div>
+      </div>
+
+
+        <div class="footer-mid">
+            <ul class="social-menu">
+                <li>
+                    <a href="https://www.instagram.com/goitclub/" target="_blank">Instagram</a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/goITclub/" target="_blank">Facebook</a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/c/GoIT/" target="_blank">Youtube</a>
+                </li>
+            </ul>
+
+            <ul class="menu">
+                <li><a href="#about-us">About us</a></li>
+                <li><a href="#our-courses">Our courses</a></li>
+                <li><a href="#our-mentors">Our mentors</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#footer">Contacts</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-bot">
+            <form class="submit-form">
+                <input
+                    type="email"
+                    placeholder="Enter your email"
+                    class="footer-textarea"
+                    id="email-input"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    required
+                />
+                <button class="go-bottom-btn" type="submit">Go</button>
+            </form>
+        </div>
+    </section>
+    <div class="footer-bot-text container">
+        <p>
+            Privacy Policy <br />
+            Public Offering Agreement
+        </p>
+        <p>2023 Focus Frame <br />© All rights reserved</p>
+    </div>
+
+
+    <div class="modal-menu">
+  <div class="menu-container">
+    <button class="modal-btn" type="button" aria-label="modal close button">
+      <svg class="modal-btn-icon" width="32" height="32">
+        <use href="/html_css_Yilchik/assets/icon-6aa2740c.svg#icon-close"></use>
+      </svg>
+    </button>
+    <nav class="menu-nav">
+      <ul class="list-nav">
+        <li class="item-nav">
+          <a href="#about-us" class="link-nav"
+            ><span class="first-item">About us</span></a
+          >
+        </li>
+        <li class="item-nav">
+          <a href="#our-courses" class="link-nav">Our courses</a>
+        </li>
+        <li class="item-nav">
+          <a href="#our-mentors" class="link-nav">Our mentors</a>
+        </li>
+        <li class="item-nav">
+          <a href="#reviews" class="link-nav">Reviews</a>
+        </li>
+        <li class="item-nav">
+          <a href="#footer" class="link-nav">contacts</a>
+        </li>
+      </ul>
+    </nav>
+    <picture>
+      <!--PHONE-->
+      <source
+        class="image"
+        media="(max-width: 767px)"
+        srcset="/html_css_Yilchik/assets/menu-mob@1x-e50a9bef.png 1x, /html_css_Yilchik/assets/menu-mob@2x-b641de58.png 2x"
+      />
+      <!-- TABLET -->
+      <source
+        class="image"
+        media="(min-width: 768px)"
+        srcset="/html_css_Yilchik/assets/menu-tab@1x-8570c97e.png 1x, /html_css_Yilchik/assets/menu-tab@2x-e4a879a4.png 2x"
+      />
+      <img class="image" src="/html_css_Yilchik/assets/menu-tab@1x-8570c97e.png" alt="image-menu" />
+    </picture>
+  </div>
+</div>
+
+  </body>
+</html>
