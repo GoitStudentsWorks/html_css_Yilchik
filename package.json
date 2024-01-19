@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/project-future-dev/",
+    "build": "vite build --base=/html_css_Yilchik/",
     "preview": "vite preview"
   },
   "devDependencies": {
